@@ -173,6 +173,71 @@
     font-size: 30px;
   }
 }
+.contact-h2 {
+  text-align: center;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-page article {
+  text-align: center;
+}
+.contact-page article li {
+  list-style: none;
+  padding-bottom: 4px;
+  text-align: start;
+}
+.contact-page article li span {
+  font-weight: 700;
+}
+
+.contact-map {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-h2 {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  .contact-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .contact-page .contact-info {
+    margin-top: -127px;
+  }
+  .contact-page .contact-info ul {
+    padding-left: 0;
+  }
+  .contact-page .contact-info ul span {
+    font-size: 18px;
+  }
+  .contact-page .contact-info h3 {
+    text-align: start;
+    font-size: 22px;
+  }
+  .contact-page .opening-hours h3 {
+    font-size: 22px;
+  }
+  .contact-page .opening-hours span {
+    font-size: 18px;
+  }
+  .contact-map {
+    display: block;
+    text-align: center;
+    font-size: auto;
+  }
+  .contact-map .contact-map iframe {
+    width: 600px;
+    height: 430px;
+  }
+}
 .catering-text {
   display: flex;
   flex-direction: column;
