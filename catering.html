@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc5eefc1c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>SCSS Flex Hemsida</title>
+</head>
+<body>
+    <body>
+        <header>
+            <nav class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+    
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">Hem</a></li>
+                    <li><a class="menu__item" href="menu.html">Meny</a></li>
+                    <li><a class="menu__item" href="catering.html">Catering</a></li>
+                    <li><a class="menu__item" href="contact.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="catering-text">
+                <h2>Catering</h2>
+                <p>Nu erbjuder vi catering av vår fantastiska glass. Vi levererar högklassig glass till ditt kalas eller event. Du eller ditt företag är välkomna att kontakta oss via formuläret nedan. </p>
+            </article>
+            <article >
+                <form class="form">
+                    <label for="name">Namn</label>
+                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Namn" required />
+                    <label for="email">E-post</label>
+                    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="E-post"
+                        required />
+                    <label for="phone">Telefonnummer</label>
+                    <input type="tel" name="phone" id="number" class="form-control"
+                        placeholder="xxxxxxxxxx" pattern="[0-9]{10}" required />
+                    <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
+                        placeholder="Meddelande" required></textarea>
+                        <button type="submit" class="form-button">Skicka</button>
+                    </div>
+                </form>
+            </article>
+        </main>
+    
+        <footer class="footer">
+            <section class="footer-section">
+                <article class="footer-adress">
+                    <p><span>Adress:</span> Idrottsgatan 7, 169 35 Solna</p>
+                </article>
+                <article class="social-links">
+                    <p>Följ oss på våra sociala medier:</p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </article>
+                <article class="copyright">
+                    <p>&copy; Copyright 2022 Café Gelato</p>
+                </article>
+            </section>
+        </footer>
+    </body>
+    </html>
+</body>
+</html>

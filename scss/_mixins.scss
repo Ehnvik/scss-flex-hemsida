@@ -1,0 +1,15 @@
+@use "variables" as v;
+
+@mixin button {
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    font-weight: 700;
+    border: none;
+    background-color: v.$primaryColor;
+    color: v.$bgColor;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+        background-color: rgba(10, 10, 10, 0.75);
+    }
+}

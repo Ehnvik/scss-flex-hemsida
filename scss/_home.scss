@@ -1,0 +1,50 @@
+@use "variables" as v;
+
+// Mobile
+
+.container {
+    background-image: url(./../assets/img/ice-cream-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+
+.hero-text {
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-top: 10vh;
+font-size: 25px;
+    a {
+        text-decoration: none;
+        margin-top: 50px;
+        i {
+            font-size: 65px;
+            color: v.$primaryColor;
+        }
+    }
+    p {
+        color: v.$primaryColor;
+        font-weight: 700;
+    }
+}
+
+
+// Desktop
+@media screen and (min-width: 768px) {
+    .container {
+        background-image: url(./../assets/img/ice-cream-desktop.jpg);
+      }
+
+    .hero-text {
+        i {
+            transition: all ease-in-out 0.25s;
+            &:hover {
+                transform: scale(1.35);
+            }
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}

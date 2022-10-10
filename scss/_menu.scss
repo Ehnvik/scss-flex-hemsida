@@ -1,0 +1,65 @@
+
+
+
+// Mobile
+
+.menu-container {
+    text-align: center;
+    h2 {
+        margin: 0px 0px 2px 0px;
+    }
+    p {
+        margin: 0px 0px 10px 0px;
+        font-size: 10px;
+    }
+    .flavor-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    h3 {
+        margin: 0;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        margin: 2px 0px;
+        text-align: start;
+        span {
+            font-weight: 700;
+        }
+    }
+    }
+}
+
+// Desktop
+
+@media  screen and (min-width: 768px) {
+    .menu-container {
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+        }
+        p {
+            text-align: center;
+            font-size: 15px;
+            margin: 10px 0px;
+        }
+        .flavor-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 70px;
+            margin-top: 50px;
+            h3 {
+                font-size: 32px;
+            }
+            li {
+                font-size: 22px;
+                margin: 10px 0px;
+                text-align: start;
+            }
+        }
+    }
+}

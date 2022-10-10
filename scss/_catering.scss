@@ -1,0 +1,70 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+
+// Mobile
+
+.catering-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: xx-large;
+    }
+    p {
+    text-align: center;
+    margin-top: 0;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    label {
+        font-weight: 700;
+    }
+    input {
+        width: 80vw;
+        height: 25px;
+    }
+    textarea {
+        width: 80vw;
+        margin-top: 15px;
+    }
+    .form-button {
+        @include m.button;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .catering-text {
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 18px;
+            width: 50vw;
+        }
+    }
+
+    .form {
+        margin-top: 40px;
+
+        label {
+            margin-top: 10px;
+        }
+        input {
+            width: 50vw;
+            height: 30px;
+        }
+        textarea {
+            width: 50vw;
+        }
+        .form-button {
+            @include m.button
+        }
+    }
+}

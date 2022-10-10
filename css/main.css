@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (max-width: 768px) {
+  #menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0;
+  }
+  .menu__btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 5%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0a0a0a;
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: rgba(171, 219, 227, 0.8);
+    transition-duration: 0.25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    color: rgba(10, 10, 10, 0.5);
+  }
+}
+@media screen and (min-width: 768px) {
+  #menu__toggle {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 15px;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0px 10px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+  }
+  nav ul li a:hover {
+    color: rgba(10, 10, 10, 0.6);
+  }
+}
+.footer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 25vh;
+  bottom: 0vh;
+  background-color: azure;
+  text-align: center;
+}
+.footer span {
+  font-weight: 700;
+  font-size: large;
+}
+.footer i {
+  font-size: x-large;
+  color: rgb(10, 10, 10);
+  padding-left: 10px;
+}
+.footer .copyright {
+  font-size: smaller;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social-links i {
+    padding-left: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  .social-links i:hover {
+    transform: scale(1.25);
+  }
+}
+.container {
+  background-image: url(./../assets/img/ice-cream-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 25px;
+}
+.hero-text a {
+  text-decoration: none;
+  margin-top: 50px;
+}
+.hero-text a i {
+  font-size: 65px;
+  color: rgb(10, 10, 10);
+}
+.hero-text p {
+  color: rgb(10, 10, 10);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-image: url(./../assets/img/ice-cream-desktop.jpg);
+  }
+  .hero-text i {
+    transition: all ease-in-out 0.25s;
+  }
+  .hero-text i:hover {
+    transform: scale(1.35);
+  }
+  .hero-text p {
+    font-size: 30px;
+  }
+}
+.catering-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catering-text h2 {
+  font-size: xx-large;
+}
+.catering-text p {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+.form label {
+  font-weight: 700;
+}
+.form input {
+  width: 80vw;
+  height: 25px;
+}
+.form textarea {
+  width: 80vw;
+  margin-top: 15px;
+}
+.form .form-button {
+  margin-top: 10px;
+  width: 80px;
+  height: 30px;
+  font-weight: 700;
+  border: none;
+  background-color: rgb(10, 10, 10);
+  color: azure;
+  transition: all 0.25s ease-in-out;
+}
+.form .form-button:hover {
+  background-color: rgba(10, 10, 10, 0.75);
+}
+
+@media screen and (min-width: 768px) {
+  .catering-text h2 {
+    font-size: 40px;
+  }
+  .catering-text p {
+    font-size: 18px;
+    width: 50vw;
+  }
+  .form {
+    margin-top: 40px;
+  }
+  .form label {
+    margin-top: 10px;
+  }
+  .form input {
+    width: 50vw;
+    height: 30px;
+  }
+  .form textarea {
+    width: 50vw;
+  }
+  .form .form-button {
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(10, 10, 10);
+    color: azure;
+    transition: all 0.25s ease-in-out;
+  }
+  .form .form-button:hover {
+    background-color: rgba(10, 10, 10, 0.75);
+  }
+}
+.menu-container {
+  text-align: center;
+}
+.menu-container h2 {
+  margin: 0px 0px 2px 0px;
+}
+.menu-container p {
+  margin: 0px 0px 10px 0px;
+  font-size: 10px;
+}
+.menu-container .flavor-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.menu-container .flavor-list h3 {
+  margin: 0;
+  text-align: center;
+}
+.menu-container .flavor-list li {
+  list-style: none;
+  margin: 2px 0px;
+  text-align: start;
+}
+.menu-container .flavor-list li span {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+  }
+  .menu-container p {
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+  .menu-container .flavor-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 50px;
+  }
+  .menu-container .flavor-list h3 {
+    font-size: 32px;
+  }
+  .menu-container .flavor-list li {
+    font-size: 22px;
+    margin: 10px 0px;
+    text-align: start;
+  }
+}
+body {
+  font-family: montserrat, sans-serif;
+  margin: 0 auto;
+  background-color: azure;
+}
+
+/*# sourceMappingURL=main.css.map */
